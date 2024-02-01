@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1. Menu</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="mobile-menu" onclick="toggleNavList()">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <ul id="nav-list">
+          <li class="dropdown">
+            <a href="#makijaz" title="Makijaż" class="nav-item dropdown-btn"
+              >Makijaż
+              <img src="./assets/icon_down.png" alt="" height="7" width="16"
+            /></a>
+            <ul class="dropdown-content">
+              <li>
+                <a href="#test" title="Test 1" class="dropdown-item">Test 1</a>
+              </li>
+              <li>
+                <a href="#test2" title="Test 2" class="dropdown-item">Test 2</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#twarz" title="Twarz" class="nav-item dropdown-btn"
+              >Twarz
+              <img src="./assets/icon_down.png" alt="" height="7" width="16" />
+            </a>
+            <ul class="dropdown-content">
+              <li>
+                <a href="#kremy" title="Kremy" class="dropdown-item">Kremy</a>
+                <ul class="dropdown-item-list">
+                  <li>
+                    <a
+                      href="#kremy-nawilzajace"
+                      title="Kremy
+                nawilżające"
+                      >Kremy nawilżające</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#kremy-odżywcze" title="Kremy odżywcze"
+                      >Kremy odżywcze</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#kremy-na-przebarwienia"
+                      title="Kremy na
+                
+                przebarwienia"
+                      >Kremy na przebarwienia</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#kremy-przeciwzmarszczkowe"
+                      title="Kremy
+                
+                przeciwzmarszczkowe"
+                      >Kremy przeciwzmarszczkowe</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#serum" title="Serum" class="dropdown-item">Serum</a>
+                <ul class="dropdown-item-list">
+                  <li>
+                    <a
+                      href="#serum-nawilzajace"
+                      title="Serum
+                
+                nawilżające"
+                      >Serum nawilżające</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#serum-odżywcze" title="Serum odżywcze"
+                      >Serum odżywcze</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#serum-na-przebarwienia"
+                      title="Serum na
+                
+                przebarwienia"
+                      >Serum na przebarwienia</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#serum-przeciwzmarszczkowe"
+                      title="Serum
+                
+                przeciwzmarszczkowe"
+                      >Serum przeciwzmarszczkowe</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#serum-olejowe" title="Serum olejowe"
+                      >Serum olejowe</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#serum-antyoksydacyjne"
+                      title="Serum
+                
+                antyoksydacyjne"
+                      >Serum antyoksydacyjne</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#serum"
+                  title="Oczyszczanie twarzy"
+                  class="dropdown-item"
+                >
+                  Oczyszczanie twarzy</a
+                >
+                <ul class="dropdown-item-list">
+                  <li>
+                    <a href="#zele" title="Żele do mycia twarzy"
+                      >Żele do mycia twarzy</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#pianki" title="Pianki do mycia twarzy"
+                      >Pianki do mycia twarzy</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#emulsje" title="Emulsje do mycia twarzy"
+                      >Emulsje do mycia twarzy</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#mydla" title="Mydła do twarzy">Mydła do twarzy</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#cialo" title="Ciało" class="nav-item">Ciało</a>
+          </li>
+          <li>
+            <a href="#wlosy" title="Włosy" class="nav-item">Włosy</a>
+          </li>
+          <li>
+            <a href="#pielegnacja" title="Pielęgnacja" class="nav-item"
+              >Pielęgnacja</a
+            >
+          </li>
+          <li>
+            <a href="#dom" title="dom" class="nav-item">dom</a>
+          </li>
+          <li id="promo-btn">
+            <a href="#promocje" title="Promocje" id="promo-btn-text"
+              >Promocje</a
+            >
+          </li>
+        </ul>
+        <div id="divider"></div>
+      </nav>
+    </header>
+    <script src="app.js"></script>
+  </body>
+</html>
