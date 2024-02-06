@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2. Wyszukiwarka</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="search-container">
+      <label for="search-input" id="search-label">Search</label>
+      <input type="text" id="search-input" data-search placeholder="Search" />
+      <img
+        src="assets/search_icon.png"
+        alt="Search Icon"
+        id="search-icon"
+        width="18"
+        height="18"
+      />
+    </div>
+    <div class="product-cards" data-product-cards-container></div>
+    <div id="no-products-message">
+      <p>No such products were found. Change your search.</p>
+    </div>
+    <template data-product-template>
+      <div class="product-card">
+        <div class="title" data-title></div>
+        <div class="price" data-price></div>
+      </div>
+    </template>
+    <script src="app.js"></script>
+  </body>
+</html>
