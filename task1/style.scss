@@ -142,14 +142,6 @@ nav {
   }
 }
 
-.dropdown-btn img {
-  transition: transform 0.3s ease-in-out;
-}
-
-.dropdown-btn.up img {
-  transform: rotate(180deg);
-}
-
 .dropdown-item {
   font-family: "Inter", sans-serif;
   font-size: 0.9375rem;
@@ -166,10 +158,6 @@ nav {
 }
 
 //menu-mobile
-
-#nav-list {
-}
-
 #nav-list.active {
   display: flex;
 }

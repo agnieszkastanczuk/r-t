@@ -19,14 +19,22 @@
   <body>
     <header>
       <nav>
-        <button id="mobile-menu" onclick="toggleNavList()">
+        <button
+          id="mobile-menu"
+          onclick="toggleNavList()"
+          aria-label="Mobile menu"
+        >
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
         </button>
         <ul id="nav-list">
           <li class="dropdown">
-            <a href="#makijaz" title="Makijaż" class="nav-item dropdown-btn"
+            <a
+              href="#makijaz"
+              title="Makijaż"
+              class="nav-item dropdown-btn"
+              aria-haspopup="true"
               >Makijaż
               <img src="./assets/icon_down.png" alt="" height="7" width="16"
             /></a>
@@ -40,7 +48,11 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#twarz" title="Twarz" class="nav-item dropdown-btn"
+            <a
+              href="#twarz"
+              title="Twarz"
+              class="nav-item dropdown-btn"
+              aria-haspopup="true"
               >Twarz
               <img src="./assets/icon_down.png" alt="" height="7" width="16" />
             </a>
